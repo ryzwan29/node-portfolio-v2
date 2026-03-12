@@ -1,0 +1,207 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { navItems, networks, mainnetNetworks, testnetNetworks, archiveNetworks } from "@/data";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import FooterDetailed from "@/components/FooterDetailed";
+import PageTransition from "@/components/ui/PageTransition";
+import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+
+const FILTERS = ["mainnet", "testnet", "archive"] as const;
+type Filter = (typeof FILTERS)[number];
+
+const filterLabel: Record<Filter, string> = {
+  mainnet: "Mainnet",
+  testnet: "Testnet",
+  archive: "Archive",
+};
+
+const matchesFilter = (n: typeof networks[0], filter: Filter): boolean => {
+  if (filter === "archive") return n.type === "archive";
+  if (filter === "mainnet") return n.type === "mainnet";
+  if (filter === "testnet") return n.type === "testnet";
+  return false;
+};
+
+const NetworkPage = () => {
+  const [filter, setFilter] = useState<Filter>("mainnet");
+
+  const filtered = networks.filter((n) => matchesFilter(n, filter));
+
+  const countFor = (f: Filter) => networks.filter((n) => matchesFilter(n, f)).length;
+
+  // Stats — otomatis ngitung dari panjang array di index.ts
+  const stats = [
+    { label: "MAINNET CHAINS",  value: mainnetNetworks.length.toString(), color: "text-[#00d4ff]" },
+    { label: "TESTNET CHAINS",  value: testnetNetworks.length.toString(), color: "text-[#00d4ff]" },
+    { label: "TVL",             value: "$100K",                            color: "text-[#00d4ff]" },
+    { label: "SLASHING EVENTS", value: "0",                                color: "text-[#00d4ff]" },
+    { label: "UPTIME",          value: "99%",                              color: "text-[#00d4ff]" },
+  ];
+
+  return (
+    <main className="relative bg-black-100 flex flex-col min-h-screen mx-auto sm:px-10 px-5 overflow-x-hidden">
+      {/* Grid neon background */}
+      <div className="h-full w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute top-0 left-0 pointer-events-none" />
+      <div className="absolute pointer-events-none inset-0 dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+
+      <div className="max-w-7xl w-full mx-auto flex-1 relative z-10">
+        <FloatingNav navItems={navItems} />
+
+        <PageTransition>
+          <div className="pt-60 pb-24 px-4 sm:px-6 lg:px-8" id="networks">
+
+            {/* Header */}
+            <p className="text-xs font-bold tracking-widest uppercase text-[#00d4ff] mb-4">
+                Validators
+              </p>
+            <div className="mb-10">
+              <TextGenerateEffect
+                words="Our Network Coverage"
+                className="text-4xl sm:text-5xl font-extrabold mb-4"
+              />
+              <p className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed">
+                We operate validators across mainnet, testnet, and archive networks with zero slashing history.
+              </p>
+            </div>
+
+            {/* Stats Cards */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
+              {stats.map((s) => (
+                <div key={s.label} className="bg-[#0b0e1a] border border-[#1e2240] rounded-xl p-5 flex flex-col items-center justify-center gap-1">
+                  <span className={`text-3xl font-extrabold ${s.color}`}>{s.value}</span>
+                  <span className="text-[10px] font-bold tracking-widest text-gray-500 uppercase text-center">{s.label}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Filter Tabs */}
+            <div className="flex gap-2 mb-6 flex-wrap">
+              {FILTERS.map((f) => {
+                const isActive = filter === f;
+                return (
+                  <button
+                    key={f}
+                    onClick={() => setFilter(f)}
+                    className={`flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-semibold border transition-all duration-200 ${
+                      isActive
+                        ? "bg-[#00d4ff]/10 border-[#00d4ff]/50 text-[#00d4ff]"
+                        : "border-[#1e2240] text-gray-400 hover:border-gray-500 hover:text-gray-200"
+                    }`}
+                  >
+                    {filterLabel[f]}
+                    <span className={`text-xs px-1.5 py-0.5 rounded font-bold ${isActive ? "bg-[#00d4ff]/20 text-[#00d4ff]" : "bg-[#1e2240] text-gray-500"}`}>
+                      {countFor(f)}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Table */}
+            <div className="bg-[#0b0e1a] border border-[#1e2240] rounded-2xl overflow-hidden">
+              {/* Table Header */}
+              <div className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_160px] gap-4 px-6 py-3 border-b border-[#1e2240]">
+                {["NETWORK", "VOTING POWER", "COMMISSION", "TVL", "STATUS", "ACTIONS"].map((h) => (
+                  <span key={h} className="text-[10px] font-bold tracking-widest text-gray-500 uppercase">{h}</span>
+                ))}
+              </div>
+
+              {/* Rows */}
+              <AnimatePresence mode="wait">
+                {filtered.map((item, i) => {
+                  const stakeEnabled = item.stake !== "#";
+                  const docsEnabled  = item.docs  !== "#";
+                  const isActive     = item.status === "active";
+
+                  return (
+                    <motion.div
+                      key={`${filter}-${item.type}-${item.id}`}
+                      initial={{ opacity: 0, y: 24 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -12 }}
+                      transition={{
+                        duration: 0.6,
+                        delay: i * 0.1,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className={`grid grid-cols-[2fr_1fr_1fr_1fr_1fr_160px] gap-4 px-6 py-4 items-center transition-colors duration-150 hover:bg-white/[0.02] ${
+                        i !== filtered.length - 1 ? "border-b border-[#1e2240]" : ""
+                      }`}
+                    >
+                    {/* Network */}
+                    <div className="flex items-center gap-3 min-w-0">
+                      <img
+                        src={item.iconLists?.[0] || "/ryd-logo.svg"}
+                        alt={item.title}
+                        className="w-9 h-9 rounded-full object-cover border border-[#2a2d3c] shrink-0"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-white font-semibold text-sm truncate">{item.title}</p>
+                        <p className="text-gray-500 text-xs truncate">{item.chainId}</p>
+                      </div>
+                    </div>
+
+                    {/* Voting Power */}
+                    <span className="text-gray-300 text-sm">{item.votingPower}</span>
+
+                    {/* Commission */}
+                    <span className="text-gray-300 text-sm">{item.commission}</span>
+
+                    {/* TVL */}
+                    <span className="text-gray-300 text-sm">{item.tvl}</span>
+
+                    {/* Status */}
+                    <div className="flex items-center gap-2">
+                      <span className={`w-2 h-2 rounded-full shrink-0 ${isActive ? "bg-green-400" : "bg-gray-600"}`} />
+                      <span className={`text-sm font-medium ${isActive ? "text-green-400" : "text-gray-500"}`}>
+                        {isActive ? "Active" : "Archived"}
+                      </span>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="flex gap-2 items-center">
+                      <a
+                        href={stakeEnabled ? item.stake : undefined}
+                        target={stakeEnabled ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        className={`w-[68px] text-center py-1.5 rounded-lg text-xs font-bold border transition-all duration-200 ${
+                          stakeEnabled
+                            ? "border-[#00d4ff]/40 text-[#00d4ff] hover:bg-[#00d4ff]/10 hover:border-[#00d4ff]"
+                            : "border-[#1e2240] text-gray-600 cursor-not-allowed opacity-40"
+                        }`}
+                      >
+                        Stake
+                      </a>
+                      <a
+                        href={docsEnabled ? item.docs : undefined}
+                        target={docsEnabled ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        className={`w-[68px] text-center py-1.5 rounded-lg text-xs font-bold border transition-all duration-200 ${
+                          docsEnabled
+                            ? "border-[#1e2240] text-gray-300 hover:border-gray-500 hover:text-white"
+                            : "border-[#1e2240] text-gray-600 cursor-not-allowed opacity-40"
+                        }`}
+                      >
+                        Guide
+                      </a>
+                    </div>
+                    </motion.div>
+                  );
+                })}
+              </AnimatePresence>
+            </div>
+
+          </div>
+        </PageTransition>
+      </div>
+
+      <div className="relative z-10">
+        <FooterDetailed />
+      </div>
+    </main>
+  );
+};
+
+export default NetworkPage;
