@@ -177,8 +177,8 @@ export const projects = [
     id: 1,
     title: "DeFi Republic",
     description: "Testnet DeFi app on Republic AI. Swap, add/remove LP, stake validator, AI contract analyzer, and daily missions for points. Social login coming soon.",
-    launchLink: "#",
-    launchAvailable: false,
+    launchLink: "https://app-republic.provewithryd.xyz",
+    launchAvailable: true,
     category: "defi",
   },
   {
