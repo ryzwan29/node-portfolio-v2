@@ -54,6 +54,9 @@ const ProjectPage = () => {
 
             {/* Header */}
             <div className="mb-10">
+              <p className="text-xs font-bold tracking-widest uppercase text-[#00d4ff] mb-4">
+                Open Source
+              </p>
               <TextGenerateEffect
                 words="Projects & Tools"
                 className="text-4xl sm:text-5xl font-extrabold mb-4"

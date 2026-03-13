@@ -241,9 +241,8 @@ export const projects = [
     id: 9,
     title: "RepublicAI Explorer",
     description: "Custom block explorer for the RepublicAI network. Browse transactions, blocks, validators, and on-chain governance",
-    launchLink: "#",
-    docsLink: "https://docs.provewithryd.xyz",
-    launchAvailable: false,
+    launchLink: "https://republicscan.provewithryd.xyz",
+    launchAvailable: true,
     category: "explorer",
   },
 ];
