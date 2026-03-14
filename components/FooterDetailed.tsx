@@ -8,7 +8,7 @@ const FooterDetailed = () => {
     { label: "Mainnet Chains",   value: `${mainnetNetworks.length} Active`  },
     { label: "Testnet Chains",   value: `${testnetNetworks.length} Active`  },
     { label: "Slashing History", value: "0 Events"                           },
-    { label: "Average Uptime",   value: "99.9%"                              },
+    { label: "Average Uptime",   value: "99%"},
   ];
 
   return (

@@ -6,6 +6,7 @@ export const navItems = [
   { name: "Project", link: "/project" },
   { name: "Network", link: "/network" },
   { name: "Tools",   link: "/tools"   },
+  { name: "Product", link: "/product" },
 ];
 
 // ─────────────────────────────────────────────
@@ -161,8 +162,56 @@ export const footerContent = {
 };
 
 // ─────────────────────────────────────────────
-//  SOCIAL MEDIA
+//  PRODUCT PAGE — Services / Products
 // ─────────────────────────────────────────────
+export const products = [
+  {
+    id: 1,
+    name: "RPC Private",
+    tag: "Infrastructure",
+    description:
+      "Dedicated private RPC endpoint with low-latency access, no rate limiting, and 99.9% uptime SLA. Ideal for dApps, bots, and high-frequency blockchain interactions.",
+    features: ["No rate limit", "Low latency", "Custom chain support", "99.9% uptime SLA"],
+    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20RPC%20Private",
+    icon: "/rpc.png",
+    accent: "#00d4ff",
+  },
+  {
+    id: 2,
+    name: "Archive Node",
+    tag: "Infrastructure",
+    description:
+      "Full historical archive node access for deep on-chain data queries. Perfect for indexers, analytics platforms, and researchers needing complete state history.",
+    features: ["Full state history", "Fast query response", "REST & gRPC support", "Multiple networks"],
+    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20Archive%20Node",
+    icon: "/archieve.png",
+    accent: "#7b8fff",
+  },
+  {
+    id: 3,
+    name: "Dedicated Server",
+    tag: "Hosting",
+    description:
+      "High-performance bare-metal dedicated servers for running validator nodes, indexers, or any compute-intensive blockchain workload. Full root access, your config.",
+    features: ["Bare-metal performance", "Full root access", "DDoS protection", "24/7 monitoring"],
+    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20Dedicated%20Server",
+    icon: "/dedicated.png",
+    accent: "#00ffcc",
+  },
+  {
+    id: 4,
+    name: "Virtual Private Server",
+    tag: "Hosting",
+    description:
+      "Affordable virtual private servers optimized for blockchain nodes, testnets, and light validator setups. Scalable specs, SSD storage, and instant deployment.",
+    features: ["SSD NVMe storage", "Scalable resources", "Instant deployment", "Linux ready"],
+    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20VPS",
+    icon: "/vps.png",
+    accent: "#f59e0b",
+  },
+];
+
+
 export const socialMedia = [
   { id: 1, name: "GitHub",   img: "/git.svg",      link: "https://github.com/ryzwan29" },
   { id: 2, name: "Twitter",  img: "/twit.svg",     link: "https://x.com/Ryddd29"       },
@@ -597,7 +646,7 @@ export const tools = [
     tag: "External",
     description: "Block explorer for all supported networks. Search transactions, blocks, and validators.",
     link: "https://explorer.provewithryd.xyz",
-    icon: "/exp1.svg",
+    icon: "/explorer.png",
     available: true,
   },
   {
@@ -606,7 +655,7 @@ export const tools = [
     tag: "External",
     description: "Real-time Grafana dashboards for validator health, uptime, and performance metrics.",
     link: "https://monitoring.provewithryd.xyz",
-    icon: "/exp2.svg",
+    icon: "/monitoring.png",
     available: true,
   },
   {
@@ -624,7 +673,7 @@ export const tools = [
     tag: "DeFi",
     description: "Auto-compound staking rewards via REStake. Supports authz for all our validators.",
     link: "https://restake.provewithryd.xyz",
-    icon: "/exp4.svg",
+    icon: "/restake.png",
     available: true,
   },
   {
