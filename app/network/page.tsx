@@ -99,8 +99,8 @@ const NetworkPage = () => {
               })}
             </div>
 
-            {/* Table */}
-            <div className="bg-[#0b0e1a] border border-[#1e2240] rounded-2xl overflow-hidden">
+            {/* Table — desktop only */}
+            <div className="hidden sm:block bg-[#0b0e1a] border border-[#1e2240] rounded-2xl overflow-hidden">
               {/* Table Header */}
               <div className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_160px] gap-4 px-6 py-3 border-b border-[#1e2240]">
                 {["NETWORK", "VOTING POWER", "COMMISSION", "TVL", "STATUS", "ACTIONS"].map((h) => (
@@ -187,6 +187,97 @@ const NetworkPage = () => {
                         Guide
                       </a>
                     </div>
+                    </motion.div>
+                  );
+                })}
+              </AnimatePresence>
+            </div>
+
+            {/* Cards — mobile only */}
+            <div className="sm:hidden flex flex-col gap-3">
+              <AnimatePresence mode="wait">
+                {filtered.map((item, i) => {
+                  const stakeEnabled = item.stake !== "#";
+                  const docsEnabled  = item.docs  !== "#";
+                  const isActive     = item.status === "active";
+
+                  return (
+                    <motion.div
+                      key={`mobile-${filter}-${item.type}-${item.id}`}
+                      initial={{ opacity: 0, y: 24 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -12 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: i * 0.06,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="bg-[#0b0e1a] border border-[#1e2240] rounded-2xl p-4"
+                    >
+                      {/* Top row: icon + name + status */}
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-3 min-w-0">
+                          <img
+                            src={item.iconLists?.[0] || "/ryd-logo.svg"}
+                            alt={item.title}
+                            className="w-10 h-10 rounded-full object-cover border border-[#2a2d3c] shrink-0"
+                          />
+                          <div className="min-w-0">
+                            <p className="text-white font-semibold text-sm truncate">{item.title}</p>
+                            <p className="text-gray-500 text-xs truncate">{item.chainId}</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                          <span className={`w-2 h-2 rounded-full shrink-0 ${isActive ? "bg-green-400" : "bg-gray-600"}`} />
+                          <span className={`text-xs font-semibold ${isActive ? "text-green-400" : "text-gray-500"}`}>
+                            {isActive ? "Active" : "Archived"}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Stats row */}
+                      <div className="grid grid-cols-3 gap-2 mb-4">
+                        <div className="bg-[#0d1120] rounded-lg px-3 py-2 flex flex-col gap-0.5">
+                          <span className="text-[9px] font-bold tracking-widest text-gray-500 uppercase">Voting Power</span>
+                          <span className="text-white text-sm font-semibold">{item.votingPower}</span>
+                        </div>
+                        <div className="bg-[#0d1120] rounded-lg px-3 py-2 flex flex-col gap-0.5">
+                          <span className="text-[9px] font-bold tracking-widest text-gray-500 uppercase">Commission</span>
+                          <span className="text-white text-sm font-semibold">{item.commission}</span>
+                        </div>
+                        <div className="bg-[#0d1120] rounded-lg px-3 py-2 flex flex-col gap-0.5">
+                          <span className="text-[9px] font-bold tracking-widest text-gray-500 uppercase">TVL</span>
+                          <span className="text-white text-sm font-semibold">{item.tvl}</span>
+                        </div>
+                      </div>
+
+                      {/* Action buttons */}
+                      <div className="flex gap-2">
+                        <a
+                          href={stakeEnabled ? item.stake : undefined}
+                          target={stakeEnabled ? "_blank" : undefined}
+                          rel="noopener noreferrer"
+                          className={`flex-1 text-center py-2 rounded-lg text-xs font-bold border transition-all duration-200 ${
+                            stakeEnabled
+                              ? "border-[#00d4ff]/40 text-[#00d4ff] hover:bg-[#00d4ff]/10 hover:border-[#00d4ff]"
+                              : "border-[#1e2240] text-gray-600 cursor-not-allowed opacity-40"
+                          }`}
+                        >
+                          Stake
+                        </a>
+                        <a
+                          href={docsEnabled ? item.docs : undefined}
+                          target={docsEnabled ? "_blank" : undefined}
+                          rel="noopener noreferrer"
+                          className={`flex-1 text-center py-2 rounded-lg text-xs font-bold border transition-all duration-200 ${
+                            docsEnabled
+                              ? "border-[#1e2240] text-gray-300 hover:border-gray-500 hover:text-white"
+                              : "border-[#1e2240] text-gray-600 cursor-not-allowed opacity-40"
+                          }`}
+                        >
+                          Guide
+                        </a>
+                      </div>
                     </motion.div>
                   );
                 })}
