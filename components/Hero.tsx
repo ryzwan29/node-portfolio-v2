@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
 
 const heroContent = {
-  greeting: "Hi! I'am Ryddd",
+  greeting: "Hi! I'am RydOne",
   role: "A Blockchain Node Validator",
   bio: "As a Independent Blockchain Node Validator, I'am committed to enhancing the stability and security of blockchain networks by running reliable and efficient nodes. I actively support the development of a trusted, transparent, and innovative blockchain ecosystem, contributing to network sustainability through consistent participation and technical expertise.",
   ctaLabel: "Show my work",

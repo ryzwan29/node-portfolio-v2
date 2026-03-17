@@ -30,7 +30,7 @@ const ProductPage = () => {
                 Services & Pricing
               </p>
               <TextGenerateEffect
-                words="Products"
+                words="Products & Services"
                 className="text-4xl sm:text-5xl font-extrabold mb-5"
               />
               <p className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed">

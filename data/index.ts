@@ -82,7 +82,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Highly Secured",
-    desc: "Ryddd is highly secured with 24/7 monitoring, ensuring the integrity and safety of transactions and stakeholder assets.",
+    desc: "RydOne is highly secured with 24/7 monitoring, ensuring the integrity and safety of transactions and stakeholder assets.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -158,7 +158,7 @@ export const footerContent = {
   body: "Reach out to me today and let's discuss how I can help you strengthen your network.",
   ctaLabel: "Contact Us",
   ctaEmail: "mailto:rydvalidator29@gmail.com",
-  copyright: "Copyright © 2025 Ryddd. All rights reserved.",
+  copyright: "Copyright © 2026 RydOne. All rights reserved.",
 };
 
 // ─────────────────────────────────────────────
