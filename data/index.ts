@@ -226,7 +226,7 @@ export const projects = [
     id: 1,
     title: "DeFi Republic",
     description: "Testnet DeFi app on Republic AI. Swap, add/remove LP, stake validator, AI contract analyzer, and daily missions for points. Social login coming soon.",
-    launchLink: "https://app-republic.provewithryd.xyz",
+    launchLink: "https://app-republic.rydone.xyz",
     launchAvailable: true,
     category: "defi",
   },
@@ -250,7 +250,7 @@ export const projects = [
     id: 4,
     title: "Multi-Chain Faucet",
     description: "Dispenses testnet tokens across 20+ networks. Rate-limited, captcha-protected, and Discord-integrated for seamless developer onboarding.",
-    launchLink: "https://faucet.provewithryd.xyz",
+    launchLink: "https://faucet.rydone.xyz",
     launchAvailable: true,
     category: "developer-tool",
   },
@@ -274,7 +274,7 @@ export const projects = [
     id: 7,
     title: "State Sync",
     description: "High-speed state-sync RPC service with <30s sync time. Maintained across all mainnet and testnet environments.",
-    launchLink: "https://docs.provewithryd.xyz",
+    launchLink: "https://docs.rydone.xyz",
     launchAvailable: true,
     category: "infrastructure",
   },
@@ -282,7 +282,7 @@ export const projects = [
     id: 8,
     title: "Public Endpoints",
     description: "Load-balanced, rate-limited public RPC and gRPC endpoints for developers. Supports REST, WebSocket, and gRPC-web protocols.",
-    launchLink: "https://endpoint.provewithryd.xyz",
+    launchLink: "https://endpoint.rydone.xyz",
     launchAvailable: true,
     category: "infrastructure",
   },
@@ -290,7 +290,7 @@ export const projects = [
     id: 9,
     title: "RepublicAI Explorer",
     description: "Custom block explorer for the RepublicAI network. Browse transactions, blocks, validators, and on-chain governance",
-    launchLink: "https://republicscan.provewithryd.xyz",
+    launchLink: "https://republicscan.rydone.xyz",
     launchAvailable: true,
     category: "explorer",
   },
@@ -320,8 +320,8 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "0.82%",
     tvl: "$2.1K",
-    stake: "https://explorer.provewithryd.xyz/axone-mainnet/staking/axonevaloper1ytru6auvhmp0ygyeka6mkjzl80zf99uw3w8gcw",
-    docs: "https://docs.provewithryd.xyz/mainnet/axone"
+    stake: "https://explorer.rydone.xyz/axone-mainnet/staking/axonevaloper1ytru6auvhmp0ygyeka6mkjzl80zf99uw3w8gcw",
+    docs: "https://docs.rydone.xyz/mainnet/axone"
   },
   {
     id: 2,
@@ -331,8 +331,8 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "1.02%",
     tvl: "$5.8K",
-    stake: "https://explorer.provewithryd.xyz/dungeon-mainnet/staking/dungeonvaloper108a82xy8ff9c6aw72rxs56yendq6spdvs88d8s",
-    docs: "https://docs.provewithryd.xyz/mainnet/dungeon"
+    stake: "https://explorer.rydone.xyz/dungeon-mainnet/staking/dungeonvaloper108a82xy8ff9c6aw72rxs56yendq6spdvs88d8s",
+    docs: "https://docs.rydone.xyz/mainnet/dungeon"
   },
   {
     id: 3,
@@ -343,7 +343,7 @@ export const mainnetNetworks = [
     votingPower: "0.56%",
     tvl: "$3.2K",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/mainnet/humanode"
+    docs: "https://docs.rydone.xyz/mainnet/humanode"
   },
   {
     id: 4,
@@ -353,8 +353,8 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "1.21%",
     tvl: "$8.3K",
-    stake: "https://explorer.provewithryd.xyz/lumen-mainnet/staking/lmnvaloper1dj0s05mfxjqg36qwxapseqa0x2ta4tytplpqtf",
-    docs: "https://docs.provewithryd.xyz/mainnet/lumen"
+    stake: "https://explorer.rydone.xyz/lumen-mainnet/staking/lmnvaloper1dj0s05mfxjqg36qwxapseqa0x2ta4tytplpqtf",
+    docs: "https://docs.rydone.xyz/mainnet/lumen"
   },
   {
     id: 5,
@@ -364,8 +364,8 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "0.43%",
     tvl: "$4.5K",
-    stake: "https://explorer.provewithryd.xyz/medas-mainnet/staking/medasvaloper1npw0kkuh5gmw22nxpumax442fpxuz5uvu3atuq",
-    docs: "https://docs.provewithryd.xyz/mainnet/medas-digital"
+    stake: "https://explorer.rydone.xyz/medas-mainnet/staking/medasvaloper1npw0kkuh5gmw22nxpumax442fpxuz5uvu3atuq",
+    docs: "https://docs.rydone.xyz/mainnet/medas-digital"
   },
   {
     id: 6,
@@ -375,8 +375,8 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "0.75%",
     tvl: "$6.1K",
-    stake: "https://explorer.provewithryd.xyz/regen-mainnet/staking/regenvaloper1zcll4k60y9v6edkht0xadexl62kjew36ezy799",
-    docs: "https://docs.provewithryd.xyz/mainnet/regen"
+    stake: "https://explorer.rydone.xyz/regen-mainnet/staking/regenvaloper1zcll4k60y9v6edkht0xadexl62kjew36ezy799",
+    docs: "https://docs.rydone.xyz/mainnet/regen"
   },
   {
     id: 7,
@@ -386,25 +386,14 @@ export const mainnetNetworks = [
     commission: "5%",
     votingPower: "0.95%",
     tvl: "$4.7K",
-    stake: "https://explorer.provewithryd.xyz/zigchain-mainnet/staking/zigvaloper1pjrjnkyunr8e8jrkgrzg4m64wp5tqzyeuf75yj",
-    docs: "https://docs.provewithryd.xyz/mainnet/zigchain"
+    stake: "https://explorer.rydone.xyz/zigchain-mainnet/staking/zigvaloper1pjrjnkyunr8e8jrkgrzg4m64wp5tqzyeuf75yj",
+    docs: "https://docs.rydone.xyz/mainnet/zigchain"
   },
 ];
 
 export const testnetNetworks = [
   {
     id: 1,
-    title: "Aztec Labs",
-    chainId: "—",
-    iconLists: ["/aztec-icon.webp"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/aztec"
-  },
-  {
-    id: 2,
     title: "Coretensor",
     chainId: "—",
     iconLists: ["/coretensor-icon.png"],
@@ -412,73 +401,62 @@ export const testnetNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "https://stake.cortensor.network/",
-    docs: "https://docs.provewithryd.xyz/testnet/coretensor"
+    docs: "https://docs.rydone.xyz/testnet/active/coretensor"
   },
   {
-    id: 3,
-    title: "Drosera",
-    chainId: "—",
-    iconLists: ["/drosera-icon.png"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/drosera"
-  },
-  {
-    id: 4,
+    id: 2,
     title: "Empeiria",
     chainId: "empe-testnet-2",
     iconLists: ["/empeiria-icon.webp"],
     commission: "5%",
     votingPower: "1.14%",
     tvl: "$1.8K",
-    stake: "https://explorer.provewithryd.xyz/empeiria-testnet/staking/empevaloper1llw20lql0cpdegy54j2dxqyd2ha5jeruhqgeln",
-    docs: "https://docs.provewithryd.xyz/testnet/empeiria"
+    stake: "https://explorer.rydone.xyz/empeiria-testnet/staking/empevaloper1llw20lql0cpdegy54j2dxqyd2ha5jeruhqgeln",
+    docs: "https://docs.rydone.xyz/testnet/active/empeiria"
   },
   {
-    id: 5,
+    id: 3,
     title: "Kiichain",
     chainId: "oro_1336-1",
     iconLists: ["/kiichain.png"],
     commission: "5%",
     votingPower: "0.38%",
     tvl: "$900",
-    stake: "https://explorer.provewithryd.xyz/kiichain-testnet/staking/kiivaloper1mlqcj3eq4dgqe826pn0w35juzwgjrdd4nf6avs",
-    docs: "https://docs.provewithryd.xyz/testnet/kiichain"
+    stake: "https://explorer.rydone.xyz/kiichain-testnet/staking/kiivaloper1mlqcj3eq4dgqe826pn0w35juzwgjrdd4nf6avs",
+    docs: "https://docs.rydone.xyz/testnet/active/kiichain"
   },
   {
-    id: 6,
+    id: 4,
     title: "Pushchain",
     chainId: "push_42101-1",
     iconLists: ["/pushchain.jpg"],
     commission: "5%",
     votingPower: "0.48%",
     tvl: "$1.5K",
-    stake: "https://explorer.provewithryd.xyz/pushchain-testnet/staking/pushvaloper1ns0pn9z25cksgw55cl9rr72gqav74xpetudqpx",
-    docs: "https://docs.provewithryd.xyz/testnet/pushchain"
+    stake: "https://explorer.rydone.xyz/pushchain-testnet/staking/pushvaloper1ns0pn9z25cksgw55cl9rr72gqav74xpetudqpx",
+    docs: "https://docs.rydone.xyz/testnet/active/pushchain"
   },
   {
-    id: 7,
+    id: 5,
     title: "RepublicAI",
     chainId: "raitestnet_77701-1",
     iconLists: ["/republicai.jpg"],
     commission: "5%",
     votingPower: "0.62%",
     tvl: "$2.4K",
-    stake: "https://explorer.provewithryd.xyz/republicai-testnet/staking/raivaloper1jnlw7aex7l7uwpjxx9e04yfj9ec0dt9utxzm6z",
-    docs: "https://docs.provewithryd.xyz/testnet/republicai"
+    stake: "https://explorer.rydone.xyz/republicai-testnet/staking/raivaloper1jnlw7aex7l7uwpjxx9e04yfj9ec0dt9utxzm6z",
+    docs: "https://docs.rydone.xyz/testnet/active/republicai"
   },
   {
-    id: 8,
+    id: 6,
     title: "Safrochain",
     chainId: "safro-testnet-1",
     iconLists: ["/safrochain-icon.jpg"],
     commission: "5%",
     votingPower: "0.91%",
     tvl: "$1.2K",
-    stake: "https://explorer.provewithryd.xyz/safrochain-testnet/staking/addr_safrovaloper1n9h75ynnm7hekkvtp2w2rkddqkfzkkftpfq7ed",
-    docs: "https://docs.provewithryd.xyz/testnet/safrochain"
+    stake: "https://explorer.rydone.xyz/safrochain-testnet/staking/addr_safrovaloper1s9wdq776nhk39fv2qjxywp0s4t667ez00c55r2",
+    docs: "https://docs.rydone.xyz/testnet/active/safrochain"
   },
 ];
 
@@ -492,7 +470,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/0g-labs"
+    docs: "https://docs.rydone.xyz/archieve/airdrop-completed/0g-labs"
   },
   {
     id: 2,
@@ -503,7 +481,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/airchain"
+    docs: "https://docs.rydone.xyz/testnet/offline/airchain"
   },
   {
     id: 3,
@@ -514,7 +492,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/cysic"
+    docs: "https://docs.rydone.xyz/archieve/airdrop-completed/cysic"
   },
   {
     id: 4,
@@ -525,7 +503,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/archieve-end/dill"
+    docs: "https://docs.rydone.xyz/archieve-end/dill"
   },
   {
     id: 5,
@@ -536,7 +514,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/farcaster"
+    docs: "https://docs.rydone.xyz/testnet/offline/farcaster"
   },
   {
     id: 6,
@@ -547,7 +525,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/helios"
+    docs: "https://docs.rydone.xyz/testnet/helios"
   },
   {
     id: 7,
@@ -558,7 +536,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/mainnet/initverse"
+    docs: "https://docs.rydone.xyz/mainnet/initverse"
   },
   {
     id: 8,
@@ -569,7 +547,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/intento"
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/intento"
   },
   {
     id: 9,
@@ -580,7 +558,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/archieve-end/privasea"
+    docs: "https://docs.rydone.xyz/archieve-end/privasea"
   },
   {
     id: 10,
@@ -591,7 +569,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/tacchain"
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/tacchain"
   },
   {
     id: 11,
@@ -602,7 +580,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/warden"
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/warden"
   },
   {
     id: 12,
@@ -613,7 +591,7 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/xos"
+    docs: "https://docs.rydone.xyz/testnet/offline/xos"
   },
   {
     id: 13,
@@ -624,7 +602,29 @@ export const archiveNetworks = [
     votingPower: "—",
     tvl: "—",
     stake: "#",
-    docs: "https://docs.provewithryd.xyz/testnet/zigchain"
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/zigchain"
+  },
+  {
+    id: 14,
+    title: "Aztec Labs",
+    chainId: "—",
+    iconLists: ["/aztec-icon.webp"],
+    commission: "5%",
+    votingPower: "—",
+    tvl: "—",
+    stake: "#",
+    docs: "https://docs.rydone.xyz/archieve/airdrop-completed/aztec"
+  },
+  {
+    id: 15,
+    title: "Drosera",
+    chainId: "—",
+    iconLists: ["/drosera-icon.png"],
+    commission: "5%",
+    votingPower: "—",
+    tvl: "—",
+    stake: "#",
+    docs: "https://docs.rydone.xyz/archieve/airdrop-completed/drosera"
   },
 ];
 
@@ -645,7 +645,7 @@ export const tools = [
     name: "Explorer",
     tag: "External",
     description: "Block explorer for all supported networks. Search transactions, blocks, and validators.",
-    link: "https://explorer.provewithryd.xyz",
+    link: "https://explorer.rydone.xyz",
     icon: "/explorer.png",
     available: true,
   },
@@ -654,7 +654,7 @@ export const tools = [
     name: "Monitoring",
     tag: "External",
     description: "Real-time Grafana dashboards for validator health, uptime, and performance metrics.",
-    link: "https://monitoring.provewithryd.xyz",
+    link: "https://monitoring.rydone.xyz",
     icon: "/monitoring.png",
     available: true,
   },
@@ -663,7 +663,7 @@ export const tools = [
     name: "Documentation",
     tag: "Docs",
     description: "Comprehensive guides for node setup, staking, IBC relaying, and API usage.",
-    link: "https://docs.provewithryd.xyz",
+    link: "https://docs.rydone.xyz",
     icon: "/exp3.svg",
     available: true,
   },
@@ -672,7 +672,7 @@ export const tools = [
     name: "Restake",
     tag: "DeFi",
     description: "Auto-compound staking rewards via REStake. Supports authz for all our validators.",
-    link: "https://restake.provewithryd.xyz",
+    link: "https://restake.rydone.xyz",
     icon: "/restake.png",
     available: true,
   },
@@ -681,7 +681,7 @@ export const tools = [
     name: "RPC Status",
     tag: "Status",
     description: "Live status page for all public RPC, gRPC, and REST endpoints we operate.",
-    link: "https://endpoint.provewithryd.xyz",
+    link: "https://endpoint.rydone.xyz",
     icon: "/exp1.svg",
     available: true,
   },
