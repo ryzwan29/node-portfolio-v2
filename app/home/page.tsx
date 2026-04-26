@@ -6,6 +6,7 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
+import Infrastructure from "@/components/Infrastructure";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
         <Hero />
         <Grid />
         <Experience />
+        <Infrastructure />
         <Approach />
         <Footer />
       </div>
