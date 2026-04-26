@@ -21,7 +21,7 @@ const nodes = [
   },
   {
     location: "Jakarta, Indonesia",
-    role: "RPC & Backup Node",
+    role: "Secondary & Backup Node",
     specs: [
       { icon: Server,      label: "Type",     value: "Baremetal Self Hosted"},
       { icon: Cpu,         label: "CPU",      value: "Dual Xeon E5-2670 v2 @ 3.30 GHz", sub: "20 Cores / 40 Threads" },
@@ -41,6 +41,8 @@ const sentryLocations = [
   "Indonesia",
   "Tokyo",
   "US East",
+  "Kenya",
+  "Siberia",
 ];
 
 export default function InfrastructureSection() {

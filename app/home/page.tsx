@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import Infrastructure from "@/components/Infrastructure";
+import GeoMap from "@/components/GeoMap";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
         <Grid />
         <Experience />
         <Infrastructure />
+        <GeoMap />
         <Approach />
         <Footer />
       </div>
