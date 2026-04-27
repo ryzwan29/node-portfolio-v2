@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256mm"
+   height="256mm"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg1049"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="Akash-Network-AKT-Coin-Icon-256x256.svg">
+  <defs
+     id="defs1043">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1163">
+      <path
+         d="M 0,500 H 500 V 0 H 0 Z"
+         id="path1161" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.31080873"
+     inkscape:cx="868.19063"
+     inkscape:cy="484.50076"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g2286"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1046">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.682488,-6.7090737)">
+    <g
+       id="center-logo"
+       transform="matrix(0.26458333,0,0,0.26458333,-49.968451,-79.941963)">
+      <g
+         id="Oval_4_" />
+      <g
+         id="g2286"
+         transform="matrix(8.3410264,0,0,8.3410264,-2404.1861,-2404.1862)">
+        <g
+           transform="matrix(6.0725464,0,0,6.0725464,-2493.365,-1671.1881)"
+           id="g1984">
+          <g
+             id="g1157"
+             transform="matrix(0.15985243,0,0,-0.15985243,434.1156,378.64938)">
+            <g
+               clip-path="url(#clipPath1163)"
+               id="g1159">
+              <g
+                 transform="translate(308.75,250)"
+                 id="g1165">
+                <path
+                   id="path1167"
+                   style="fill:#e30613;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="m 0,0 c 0,-32.446 -26.304,-58.75 -58.75,-58.75 -32.447,0 -58.75,26.304 -58.75,58.75 0,32.447 26.303,58.75 58.75,58.75 C -26.304,58.75 0,32.447 0,0" />
+              </g>
+              <g
+                 transform="translate(308.75,250)"
+                 id="g1169">
+                <path
+                   id="path1171"
+                   style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   d="m 0,0 c 0,-32.446 -26.304,-58.75 -58.75,-58.75 -32.447,0 -58.75,26.304 -58.75,58.75 0,32.447 26.303,58.75 58.75,58.75 C -26.304,58.75 0,32.447 0,0 Z" />
+              </g>
+            </g>
+          </g>
+          <g
+             transform="matrix(0.15985243,0,0,-0.15985243,478.03739,343.08221)"
+             id="g1341">
+            <path
+               id="path1343"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="M 0,0 11.601,20.118 -11.615,60.354 H -34.831 Z" />
+          </g>
+          <g
+             transform="matrix(0.15985243,0,0,-0.15985243,476.18176,339.86627)"
+             id="g1345">
+            <path
+               id="path1347"
+               style="fill:#d0d2d3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="M 0,0 11.601,-20.118 H -11.607 L -23.223,0 Z" />
+          </g>
+          <g
+             transform="matrix(0.15985243,0,0,-0.15985243,470.61402,336.65042)"
+             id="g1349">
+            <path
+               id="path1351"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="M 0,0 H 23.216 L 0.007,-40.236 -11.607,-20.118 Z" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

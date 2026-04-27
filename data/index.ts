@@ -317,9 +317,9 @@ export const mainnetNetworks = [
     title: "Axone",
     chainId: "axone-1",
     iconLists: ["/axone-icon.png"],
-    commission: "5%",
+    commission: "7%",
     votingPower: "0.82%",
-    tvl: "$2.1K",
+    tvl: "$10K",
     stake: "https://explorer.rydone.xyz/axone-mainnet/staking/axonevaloper1ytru6auvhmp0ygyeka6mkjzl80zf99uw3w8gcw",
     docs: "https://docs.rydone.xyz/mainnet/axone"
   },
@@ -328,7 +328,7 @@ export const mainnetNetworks = [
     title: "Dungeon Chain",
     chainId: "dungeon-1",
     iconLists: ["/dungeon.png"],
-    commission: "5%",
+    commission: "7%",
     votingPower: "1.02%",
     tvl: "$5.8K",
     stake: "https://explorer.rydone.xyz/dungeon-mainnet/staking/dungeonvaloper108a82xy8ff9c6aw72rxs56yendq6spdvs88d8s",
@@ -361,8 +361,8 @@ export const mainnetNetworks = [
     title: "Medas Digital",
     chainId: "medas-digital-2",
     iconLists: ["/medas-icon.png"],
-    commission: "5%",
-    votingPower: "0.43%",
+    commission: "10%",
+    votingPower: "6.61%",
     tvl: "$4.5K",
     stake: "https://explorer.rydone.xyz/medas-mainnet/staking/medasvaloper1npw0kkuh5gmw22nxpumax442fpxuz5uvu3atuq",
     docs: "https://docs.rydone.xyz/mainnet/medas-digital"
@@ -372,7 +372,7 @@ export const mainnetNetworks = [
     title: "Regen",
     chainId: "regen-1",
     iconLists: ["/regen.png"],
-    commission: "5%",
+    commission: "10%",
     votingPower: "0.75%",
     tvl: "$6.1K",
     stake: "https://explorer.rydone.xyz/regen-mainnet/staking/regenvaloper1zcll4k60y9v6edkht0xadexl62kjew36ezy799",
@@ -385,9 +385,108 @@ export const mainnetNetworks = [
     iconLists: ["/zigchain-icon.jpg"],
     commission: "5%",
     votingPower: "0.95%",
-    tvl: "$4.7K",
+    tvl: "$85.2K",
     stake: "https://explorer.rydone.xyz/zigchain-mainnet/staking/zigvaloper1pjrjnkyunr8e8jrkgrzg4m64wp5tqzyeuf75yj",
     docs: "https://docs.rydone.xyz/mainnet/zigchain"
+  },
+  {
+    id: 8,
+    title: "Canton",
+    chainId: "—",
+    iconLists: ["/canton.png"],
+    commission: "—",
+    votingPower: "—",
+    tvl: "$50.7K",
+    stake: "https://lighthouse.cantonloop.com/validators",
+    docs: "https://docs.rydone.xyz/mainnet/canton"
+  },
+  {
+    id: 9,
+    title: "Akash",
+    chainId: "akashnet-2",
+    iconLists: ["/akash.svg"],
+    commission: "5%",
+    votingPower: "0.22%",
+    tvl: "$102.8K",
+    stake: "https://explorer.rydone.xyz/akash-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/akash"
+  },
+  {
+    id: 10,
+    title: "AtomOne",
+    chainId: "atomone-1",
+    iconLists: ["/atomone.png"],
+    commission: "7%",
+    votingPower: "0.34%",
+    tvl: "$49.7K",
+    stake: "https://explorer.rydone.xyz/atomone-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/atomone"
+  },
+  {
+    id: 11,
+    title: "Celestia",
+    chainId: "celestia",
+    iconLists: ["/celestia.jpeg"],
+    commission: "15%",
+    votingPower: "0.31%",
+    tvl: "$520.2K",
+    stake: "https://explorer.rydone.xyz/celestia-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/celestia"
+  },
+  {
+    id: 12,
+    title: "Cosmos",
+    chainId: "cosmoshub-4",
+    iconLists: ["/cosmos.png"],
+    commission: "5%",
+    votingPower: "0.14%",
+    tvl: "$871.6K",
+    stake: "https://explorer.rydone.xyz/cosmos-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/cosmos"
+  },
+  {
+    id: 13,
+    title: "Injective",
+    chainId: "injective-1",
+    iconLists: ["/injective.jpg"],
+    commission: "10%",
+    votingPower: "0.87%",
+    tvl: "$1.7M",
+    stake: "https://explorer.rydone.xyz/injective-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/injective"
+  },
+  {
+    id: 14,
+    title: "Osmosis",
+    chainId: "osmosis-1",
+    iconLists: ["/osmosis.jpg"],
+    commission: "7%",
+    votingPower: "0.15%",
+    tvl: "$9.3K",
+    stake: "https://explorer.rydone.xyz/osmosis-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/osmosis"
+  },
+  {
+    id: 15,
+    title: "Xion",
+    chainId: "xion-mainnet-1",
+    iconLists: ["/xion.png"],
+    commission: "5%",
+    votingPower: "0.0%",
+    tvl: "$1.1K",
+    stake: "https://explorer.rydone.xyz/xion-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/xion"
+  },
+  {
+    id: 16,
+    title: "Axelar",
+    chainId: "axelar-dojo-1",
+    iconLists: ["/axelar.png"],
+    commission: "10%",
+    votingPower: "1.4%",
+    tvl: "$278.9K",
+    stake: "https://explorer.rydone.xyz/axelar-mainnet/staking",
+    docs: "https://docs.rydone.xyz/mainnet/axelar"
   },
 ];
 
@@ -397,7 +496,7 @@ export const testnetNetworks = [
     title: "Coretensor",
     chainId: "—",
     iconLists: ["/coretensor-icon.png"],
-    commission: "5%",
+    commission: "—",
     votingPower: "—",
     tvl: "—",
     stake: "https://stake.cortensor.network/",
@@ -410,7 +509,7 @@ export const testnetNetworks = [
     iconLists: ["/empeiria-icon.webp"],
     commission: "5%",
     votingPower: "1.14%",
-    tvl: "$1.8K",
+    tvl: "—",
     stake: "https://explorer.rydone.xyz/empeiria-testnet/staking/empevaloper1llw20lql0cpdegy54j2dxqyd2ha5jeruhqgeln",
     docs: "https://docs.rydone.xyz/testnet/active/empeiria"
   },
@@ -421,7 +520,7 @@ export const testnetNetworks = [
     iconLists: ["/kiichain.png"],
     commission: "5%",
     votingPower: "0.38%",
-    tvl: "$900",
+    tvl: "—",
     stake: "https://explorer.rydone.xyz/kiichain-testnet/staking/kiivaloper1mlqcj3eq4dgqe826pn0w35juzwgjrdd4nf6avs",
     docs: "https://docs.rydone.xyz/testnet/active/kiichain"
   },
@@ -432,7 +531,7 @@ export const testnetNetworks = [
     iconLists: ["/pushchain.jpg"],
     commission: "5%",
     votingPower: "0.48%",
-    tvl: "$1.5K",
+    tvl: "—",
     stake: "https://explorer.rydone.xyz/pushchain-testnet/staking/pushvaloper1ns0pn9z25cksgw55cl9rr72gqav74xpetudqpx",
     docs: "https://docs.rydone.xyz/testnet/active/pushchain"
   },
@@ -443,7 +542,7 @@ export const testnetNetworks = [
     iconLists: ["/republicai.jpg"],
     commission: "5%",
     votingPower: "0.62%",
-    tvl: "$2.4K",
+    tvl: "—",
     stake: "https://explorer.rydone.xyz/republicai-testnet/staking/raivaloper1jnlw7aex7l7uwpjxx9e04yfj9ec0dt9utxzm6z",
     docs: "https://docs.rydone.xyz/testnet/active/republicai"
   },
@@ -453,10 +552,76 @@ export const testnetNetworks = [
     chainId: "safro-testnet-1",
     iconLists: ["/safrochain-icon.jpg"],
     commission: "5%",
-    votingPower: "0.91%",
-    tvl: "$1.2K",
+    votingPower: "6.91%",
+    tvl: "—",
     stake: "https://explorer.rydone.xyz/safrochain-testnet/staking/addr_safrovaloper1s9wdq776nhk39fv2qjxywp0s4t667ez00c55r2",
     docs: "https://docs.rydone.xyz/testnet/active/safrochain"
+  },
+  {
+    id: 7,
+    title: "Airchain",
+    chainId: "varanasi-1",
+    iconLists: ["/airchain.ico"],
+    commission: "5%",
+    votingPower: "0.27%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/airchain-testnet/staking/airvaloper1awfqvv5z7kzaj6qh7v4hjyev87e52pkv2gumjt",
+    docs: "https://docs.rydone.xyz/testnet/offline/airchain"
+  },
+   {
+    id: 8,
+    title: "Intento",
+    chainId: "intento-testnet-1",
+    iconLists: ["/intento-icon.jpg"],
+    commission: "5%",
+    votingPower: "0.13%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/intento-testnet/staking/",
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/intento"
+  },
+  {
+    id: 9,
+    title: "TacChain",
+    chainId: "tacchain_2391-1",
+    iconLists: ["/tacchain-icon.jpg"],
+    commission: "5%",
+    votingPower: "0.31%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/tacchain-testnet/staking/tacvaloper1js04l9w3572ha6qgrmc28a66yedmumqk2ufvu5",
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/tacchain"
+  },
+  {
+    id: 10,
+    title: "Warden",
+    chainId: "buenavista-1",
+    iconLists: ["/warden-icon.png"],
+    commission: "5%",
+    votingPower: "0.05%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/warden-testnet/staking/",
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/warden"
+  },
+  {
+    id: 11,
+    title: "XOS",
+    chainId: "xos_1267-1",
+    iconLists: ["/xos-icon.webp"],
+    commission: "5%",
+    votingPower: "1.41%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/xos-testnet/staking/",
+    docs: "https://docs.rydone.xyz/testnet/offline/xos"
+  },
+  {
+    id: 12,
+    title: "Zigchain",
+    chainId: "zig-test-2",
+    iconLists: ["/zigchain-icon.jpg"],
+    commission: "5%",
+    votingPower: "2.61%",
+    tvl: "—",
+    stake: "https://explorer.rydone.xyz/zigchain-testnet/staking/zigvaloper1pjrjnkyunr8e8jrkgrzg4m64wp5tqzyeuf75yj",
+    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/zigchain"
   },
 ];
 
@@ -474,17 +639,6 @@ export const archiveNetworks = [
   },
   {
     id: 2,
-    title: "Airchain",
-    chainId: "varanasi-1",
-    iconLists: ["/airchain.ico"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/testnet/offline/airchain"
-  },
-  {
-    id: 3,
     title: "Cysic",
     chainId: "—",
     iconLists: ["/cysic-icon.png"],
@@ -495,7 +649,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/archieve/airdrop-completed/cysic"
   },
   {
-    id: 4,
+    id: 3,
     title: "Dill",
     chainId: "—",
     iconLists: ["/dill-icon.png"],
@@ -506,7 +660,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/archieve-end/dill"
   },
   {
-    id: 5,
+    id: 4,
     title: "Farcaster",
     chainId: "—",
     iconLists: ["/farcaster-icon.png"],
@@ -517,7 +671,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/testnet/offline/farcaster"
   },
   {
-    id: 6,
+    id: 5,
     title: "Helios",
     chainId: "42000",
     iconLists: ["/helios.jpg"],
@@ -528,7 +682,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/testnet/helios"
   },
   {
-    id: 7,
+    id: 6,
     title: "Inichain",
     chainId: "—",
     iconLists: ["/inichain-icon.jpg"],
@@ -539,18 +693,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/mainnet/initverse"
   },
   {
-    id: 8,
-    title: "Intento",
-    chainId: "intento-testnet-1",
-    iconLists: ["/intento-icon.jpg"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/intento"
-  },
-  {
-    id: 9,
+    id: 7,
     title: "Privasea",
     chainId: "—",
     iconLists: ["/privasea-icon.avif"],
@@ -560,52 +703,9 @@ export const archiveNetworks = [
     stake: "#",
     docs: "https://docs.rydone.xyz/archieve-end/privasea"
   },
+  
   {
-    id: 10,
-    title: "TacChain",
-    chainId: "tacchain_2391-1",
-    iconLists: ["/tacchain-icon.jpg"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/tacchain"
-  },
-  {
-    id: 11,
-    title: "Warden",
-    chainId: "buenavista-1",
-    iconLists: ["/warden-icon.png"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/warden"
-  },
-  {
-    id: 12,
-    title: "XOS",
-    chainId: "xos_1267-1",
-    iconLists: ["/xos-icon.webp"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/testnet/offline/xos"
-  },
-  {
-    id: 13,
-    title: "Zigchain",
-    chainId: "zig-test-2",
-    iconLists: ["/zigchain-icon.jpg"],
-    commission: "5%",
-    votingPower: "—",
-    tvl: "—",
-    stake: "#",
-    docs: "https://docs.rydone.xyz/archieve/validator-set-finalized/zigchain"
-  },
-  {
-    id: 14,
+    id: 8,
     title: "Aztec Labs",
     chainId: "—",
     iconLists: ["/aztec-icon.webp"],
@@ -616,7 +716,7 @@ export const archiveNetworks = [
     docs: "https://docs.rydone.xyz/archieve/airdrop-completed/aztec"
   },
   {
-    id: 15,
+    id: 9,
     title: "Drosera",
     chainId: "—",
     iconLists: ["/drosera-icon.png"],
