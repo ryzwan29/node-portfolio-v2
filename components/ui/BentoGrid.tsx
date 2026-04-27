@@ -67,7 +67,7 @@ const rightLists = ["Guide Installation", "Public Endpoint", "Storage Node"];
   };
 
   const handleCopy = () => {
-    const text = "ryddd29@gmail.com";
+    const text = "infra@rydone.xyz";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
