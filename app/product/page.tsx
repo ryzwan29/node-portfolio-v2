@@ -110,10 +110,10 @@ const ProductPage = () => {
               <p className="text-gray-500 text-sm">
                 Need something custom? Reach out directly at{" "}
                 <a
-                  href="mailto:rydvalidator29@gmail.com"
+                  href="mailto:infra@rydone.xyz"
                   className="text-[#00d4ff] hover:underline font-medium"
                 >
-                  rydvalidator29@gmail.com
+                  infra@rydone.xyz
                 </a>
               </p>
             </div>

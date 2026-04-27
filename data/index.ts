@@ -157,7 +157,7 @@ export const footerContent = {
   subheading: "for maximum performance, security, and reliability.",
   body: "Reach out to me today and let's discuss how I can help you strengthen your network.",
   ctaLabel: "Contact Us",
-  ctaEmail: "mailto:rydvalidator29@gmail.com",
+  ctaEmail: "mailto:infra@rydone.xyz",
   copyright: "Copyright © 2026 RydOne. All rights reserved.",
 };
 
@@ -172,7 +172,7 @@ export const products = [
     description:
       "Dedicated private RPC endpoint with low-latency access, no rate limiting, and 99.9% uptime SLA. Ideal for dApps, bots, and high-frequency blockchain interactions.",
     features: ["No rate limit", "Low latency", "Custom chain support", "99.9% uptime SLA"],
-    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20RPC%20Private",
+    contactEmail: "mailto:infra@rydone.xyz?subject=Inquiry%3A%20RPC%20Private",
     icon: "/rpc.png",
     accent: "#00d4ff",
   },
@@ -183,7 +183,7 @@ export const products = [
     description:
       "Full historical archive node access for deep on-chain data queries. Perfect for indexers, analytics platforms, and researchers needing complete state history.",
     features: ["Full state history", "Fast query response", "REST & gRPC support", "Multiple networks"],
-    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20Archive%20Node",
+    contactEmail: "mailto:infra@rydone.xyz?subject=Inquiry%3A%20Archive%20Node",
     icon: "/archieve.png",
     accent: "#7b8fff",
   },
@@ -194,7 +194,7 @@ export const products = [
     description:
       "High-performance bare-metal dedicated servers for running validator nodes, indexers, or any compute-intensive blockchain workload. Full root access, your config.",
     features: ["Bare-metal performance", "Full root access", "DDoS protection", "24/7 monitoring"],
-    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20Dedicated%20Server",
+    contactEmail: "mailto:infra@rydone.xyz?subject=Inquiry%3A%20Dedicated%20Server",
     icon: "/dedicated.png",
     accent: "#00ffcc",
   },
@@ -205,7 +205,7 @@ export const products = [
     description:
       "Affordable virtual private servers optimized for blockchain nodes, testnets, and light validator setups. Scalable specs, SSD storage, and instant deployment.",
     features: ["SSD NVMe storage", "Scalable resources", "Instant deployment", "Linux ready"],
-    contactEmail: "mailto:rydvalidator29@gmail.com?subject=Inquiry%3A%20VPS",
+    contactEmail: "mailto:infra@rydone.xyz?subject=Inquiry%3A%20VPS",
     icon: "/vps.png",
     accent: "#f59e0b",
   },
