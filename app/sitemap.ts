@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const siteUrl = "https://ryddd.xyz"; // 🔁 Ganti dengan domain lo
+const siteUrl = "https://rydone.xyz"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

@@ -6,7 +6,7 @@ import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteUrl = "https://ryddd.xyz"; // 🔁 Ganti dengan domain lo yang sebenarnya
+const siteUrl = "https://rydone.xyz"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
