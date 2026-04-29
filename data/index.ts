@@ -339,8 +339,8 @@ export const mainnetNetworks = [
     title: "Humanode",
     chainId: "—",
     iconLists: ["/humanode-icon.png"],
-    commission: "5%",
-    votingPower: "0.56%",
+    commission: "—",
+    votingPower: "—",
     tvl: "$3.2K",
     stake: "#",
     docs: "https://docs.rydone.xyz/mainnet/humanode"
@@ -487,6 +487,17 @@ export const mainnetNetworks = [
     tvl: "$278.9K",
     stake: "https://explorer.rydone.xyz/axelar-mainnet/staking",
     docs: "https://docs.rydone.xyz/mainnet/axelar"
+  },
+  {
+    id: 17,
+    title: "Pactus",
+    chainId: "—",
+    iconLists: ["/axelar.png"],
+    commission: "20%",
+    votingPower: "—",
+    tvl: "$500",
+    stake: "https://pactusscan.com/hub/pc1rjevh8ldymejhm0wnzqmq6t7qc8q2qdtka06r7z",
+    docs: "https://docs.rydone.xyz/mainnet/pactus"
   },
 ];
 
