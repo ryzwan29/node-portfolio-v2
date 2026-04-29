@@ -492,7 +492,7 @@ export const mainnetNetworks = [
     id: 17,
     title: "Pactus",
     chainId: "—",
-    iconLists: ["/axelar.png"],
+    iconLists: ["/pactus.svg"],
     commission: "20%",
     votingPower: "—",
     tvl: "$500",
