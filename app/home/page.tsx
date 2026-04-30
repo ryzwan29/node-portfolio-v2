@@ -18,9 +18,9 @@ const HomePage = () => {
         <Hero />
         <Grid />
         <Experience />
+        <Approach />
         <Infrastructure />
         <GeoMap />
-        <Approach />
         <Footer />
       </div>
     </main>

@@ -109,6 +109,30 @@ export const workExperience = [
   },
 ];
 
+export const partners = [
+  {
+    id: 1,
+    name: "Pactus",
+    logo: "/pactus.svg",
+    website: "https://pactus.org/",
+    description: "Fully decentralized L1 powered by Solid State Proof of Stake",
+  },
+  {
+    id: 2,
+    name: "Canton",
+    logo: "/canton.png",
+    website: "https://www.canton.network/",
+    description: "Privacy-enabled blockchain for institutional finance",
+  },
+  {
+    id: 3,
+    name: "Republic AI",
+    logo: "/republicai.jpg",
+    website: "https://republicai.io/",
+    description: "AI-powered decentralized compute and inference network",
+  },
+];
+
 // ─────────────────────────────────────────────
 //  HOME PAGE — Approach / Deployment Process
 // ─────────────────────────────────────────────
