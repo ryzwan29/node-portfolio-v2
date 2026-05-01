@@ -520,8 +520,8 @@ export const mainnetNetworks = [
     commission: "20%",
     votingPower: "—",
     tvl: "$500",
-    stake: "https://pactusscan.com/hub/pc1rjevh8ldymejhm0wnzqmq6t7qc8q2qdtka06r7z",
-    docs: "https://docs.rydone.xyz/mainnet/pactus"
+    stake: "https://pactusscan.com",
+    docs: "https://docs.pactus.org/get-started/become-a-validator/"
   },
 ];
 
