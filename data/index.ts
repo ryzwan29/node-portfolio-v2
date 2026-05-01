@@ -520,8 +520,8 @@ export const mainnetNetworks = [
     commission: "20%",
     votingPower: "—",
     tvl: "$500",
-    stake: "https://pactusscan.com",
-    docs: "https://docs.pactus.org/get-started/become-a-validator/"
+    stake: "https://pactusscan.com/hub/",
+    docs: "https://github.com/pactus-project/pactus"
   },
 ];
 
