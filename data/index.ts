@@ -521,7 +521,7 @@ export const mainnetNetworks = [
     votingPower: "—",
     tvl: "$500",
     stake: "https://pactusscan.com/hub/",
-    docs: "https://github.com/pactus-project/pactus"
+    docs: "https://docs.pactus.org/"
   },
 ];
 
